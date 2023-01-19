@@ -1,0 +1,107 @@
+//===================================================================
+.footer {
+  z-index: 2;
+  background: #fbfbff;
+  padding: rem(40) 0 rem(20) 0;
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10);
+    padding-bottom: rem(20);
+    border-bottom: 1px solid #dcdcdc;
+    flex-wrap: wrap;
+    row-gap: rem(20);
+  }
+
+  &__info {
+  }
+}
+.body-footer {
+  &__logo {
+    @media (max-width: $mobileSmall) {
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  &__menu {
+  }
+
+  &__seti {
+  }
+}
+.menu-footer {
+  &__body {
+  }
+
+  &__list {
+    display: flex;
+    @include adaptiveValue("column-gap", 50, 15);
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: rem(10);
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-weight: 600;
+    line-height: math.div(18, 15);
+    color: #949fb7;
+    white-space: nowrap;
+  }
+}
+.seti-footer {
+  display: flex;
+  gap: rem(20);
+  &__link {
+    display: flex;
+    justify-content: center;
+    min-height: 45px;
+    min-width: 45px;
+    background-color: #949fb7;
+    border-radius: 50%;
+  }
+}
+.seti-footer .vk {
+  background: linear-gradient(180deg, #2499e4 0%, #1c6edd 100%);
+}
+.seti-footer .tg {
+  background: linear-gradient(180deg, #75c9ff 0%, #4592f9 100%);
+}
+.seti-footer .youtube {
+  background: linear-gradient(1.32deg, #f61c0d 1.1%, #fc7c73 95.64%);
+}
+.info-footer {
+  padding-top: rem(15);
+  display: flex;
+  gap: rem(5);
+  row-gap: rem(15);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  &__body {
+    display: flex;
+    align-items: center;
+    @include adaptiveValue("column-gap", 40, 10);
+    row-gap: rem(5);
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    line-height: math.div(18, 15);
+    color: #949fb7;
+  }
+
+  &__info {
+    line-height: math.div(18, 15);
+    color: #949fb7;
+  }
+}
+
+//===================================================================

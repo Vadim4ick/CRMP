@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page page__home">
+        <section class="main-choice__game game-choice">
+          <div class="game-choice__container">
+            <div class="game-choice__body">
+              <div class="game-choice__title">
+                <h1>ИГРЫ</h1>
+              </div>
+              <div class="game-choice__subtitle">
+                <h3>Выберите игру</h3>
+              </div>
+              <div class="game-choice__content content-choice">
+                <div class="content-choice__item item-lottery">
+                  <div class="content-choice__header choice-color">
+                    <div class="content-choice__title">
+                      <h3>Лотерея</h3>
+                    </div>
+                  </div>
+                  <div class="content-choice__body">
+                    <div class="content-choice__img">
+                      <div class="content-choice__image-ibg">
+                        <img src="img/game-choice/1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="content-choice__text">
+                      <p>Поборись за главный приз!</p>
+                    </div>
+                  </div>
+                  <div class="content-choice__footer">
+                    <a href="#" class="content-choice__link btn choice-color">
+                      <p>Играть</p>
+
+                      <img src="img/game-choice/circle.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="content-choice__item item-roulette">
+                  <div class="content-choice__header choice-color">
+                    <div class="content-choice__title">
+                      <h3>Рулетка</h3>
+                    </div>
+                  </div>
+                  <div class="content-choice__body">
+                    <div class="content-choice__img">
+                      <div class="content-choice__image-ibg">
+                        <img src="img/game-choice/2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="content-choice__text">
+                      <p>Поборись за главный приз!</p>
+                    </div>
+                  </div>
+                  <div class="content-choice__footer">
+                    <a
+                      href="#"
+                      class="content-choice__link btn choice-color _icon-roulette"
+                    >
+                      <p>Играть</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="content-choice__item item-tower">
+                  <div class="content-choice__header choice-color">
+                    <div class="content-choice__title">
+                      <h3>Башня</h3>
+                    </div>
+                  </div>
+                  <div class="content-choice__body">
+                    <div class="content-choice__img">
+                      <div class="content-choice__image-ibg">
+                        <img src="img/game-choice/3.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="content-choice__text">
+                      <p>Поборись за главный приз!</p>
+                    </div>
+                  </div>
+                  <div class="content-choice__footer">
+                    <a href="#" class="content-choice__link btn choice-color">
+                      <p>Играть</p>
+                      <img src="img/game-choice/tower.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

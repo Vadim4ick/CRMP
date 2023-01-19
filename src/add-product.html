@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page page__home">
+        <section class="product__add add-produt">
+          <div class="add-product__container">
+            <div class="add-product__contents">
+              <div class="add-product__title">
+                <h1>ДОБАВЛЕНИЕ ТОВАРА</h1>
+              </div>
+              <div class="add-product__subtitle">
+                <h3>Для добавления своего товара - заполните все поля</h3>
+              </div>
+              <a href="#" class="add-product__breadcrumbs _icon-arrow-right">
+                <p>Назад к каталогу</p>
+              </a>
+            </div>
+
+            <div class="add-product__content">
+              <div data-tabs class="add-product__tabs">
+                <nav data-tabs-titles class="add-product__navigation">
+                  <button
+                    type="button"
+                    class="add-product__title title-accounts tabs-title _tab-active"
+                  >
+                    Игровые аккаунты
+                  </button>
+                  <button
+                    type="button"
+                    class="add-product__title tabs-title title-currency"
+                  >
+                    Виртуальная валюта
+                  </button>
+                </nav>
+                <div data-tabs-body class="add-product__content">
+                  <div class="add-product__body">
+                    <div class="add-product__info info-product">
+                      <div class="info-product__container">
+                        <div class="info-product__body">
+                          <div class="info-product__select">
+                            <div class="info-product__title">
+                              <p>Проект</p>
+                            </div>
+                            <select name="form[]" class="info-product__form">
+                              <option value="1" selected>Radmir RP</option>
+                              <option value="2">Radmir RP</option>
+                              <option value="3">Radmir RP</option>
+                              <option value="4">Radmir RP</option>
+                            </select>
+                          </div>
+
+                          <div class="info-product__select">
+                            <div class="info-product__title">
+                              <p>Проект</p>
+                            </div>
+                            <select name="form[]" class="info-product__form">
+                              <option value="1" selected>01</option>
+                              <option value="2">02</option>
+                              <option value="3">03</option>
+                            </select>
+                          </div>
+
+                          <div class="info-product__item">
+                            <div class="info-product__title authorization">
+                              <p>Логин</p>
+                            </div>
+
+                            <input
+                              autocomplete="off"
+                              type="text"
+                              name="form[]"
+                              data-error="Ошибка"
+                              placeholder=""
+                              class="info-product__inp"
+                            />
+                          </div>
+
+                          <div class="info-product__item">
+                            <div class="info-product__title authorization">
+                              <p>Пароль</p>
+                            </div>
+
+                            <input
+                              autocomplete="off"
+                              type="password"
+                              name="form[]"
+                              data-error="Ошибка"
+                              placeholder=""
+                              class="info-product__inp"
+                            />
+                          </div>
+
+                          <div class="info-product__item">
+                            <div class="info-product__title">
+                              <p>Рег.данные <span>(необязательно)</span></p>
+                            </div>
+
+                            <input
+                              autocomplete="off"
+                              type="text"
+                              name="form[]"
+                              data-error="Ошибка"
+                              placeholder=""
+                              class="info-product__inp"
+                            />
+                          </div>
+
+                          <div class="info-product__item">
+                            <div class="info-product__title">
+                              <p>Пинкод <span>(необязательно)</span></p>
+                            </div>
+
+                            <input
+                              autocomplete="off"
+                              type="text"
+                              name="form[]"
+                              data-error="Ошибка"
+                              placeholder=""
+                              class="info-product__inp"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="add-product__additionally additionally-product">
+                      <div class="additionally-product__body">
+                        <div class="additionally-product__title">
+                          <p>Дополнительная информация</p>
+                        </div>
+
+                        <div class="additionally-product__checkboxes">
+                          <div class="additionally-product__checkbox">
+                            <input
+                              id="c_1"
+                              data-error="Ошибка"
+                              class="checkbox__input"
+                              type="checkbox"
+                              value="1"
+                              name="form[]"
+                            />
+                            <label for="c_1" class="checkbox__label"
+                              ><span class="checkbox__text"
+                                >Без КПЗ</span
+                              ></label
+                            >
+                          </div>
+                          <div class="additionally-product__checkbox">
+                            <input
+                              id="c_2"
+                              data-error="Ошибка"
+                              class="checkbox__input"
+                              type="checkbox"
+                              value="2"
+                              name="form[]"
+                            />
+                            <label for="c_2" class="checkbox__label"
+                              ><span class="checkbox__text"
+                                >С рег.данными</span
+                              ></label
+                            >
+                          </div>
+                          <div class="additionally-product__checkbox">
+                            <input
+                              id="c_3"
+                              data-error="Ошибка"
+                              class="checkbox__input"
+                              type="checkbox"
+                              value="3"
+                              name="form[]"
+                            />
+                            <label for="c_3" class="checkbox__label"
+                              ><span class="checkbox__text"
+                                >С домом</span
+                              ></label
+                            >
+                          </div>
+                          <div class="additionally-product__checkbox">
+                            <input
+                              id="c_4"
+                              data-error="Ошибка"
+                              class="checkbox__input"
+                              type="checkbox"
+                              value="4"
+                              name="form[]"
+                            />
+                            <label for="c_4" class="checkbox__label"
+                              ><span class="checkbox__text">С авто</span></label
+                            >
+                          </div>
+                          <div class="additionally-product__checkbox">
+                            <input
+                              id="c_5"
+                              data-error="Ошибка"
+                              class="checkbox__input"
+                              type="checkbox"
+                              value="5"
+                              name="form[]"
+                            />
+                            <label for="c_5" class="checkbox__label"
+                              ><span class="checkbox__text"
+                                >Без привязок</span
+                              ></label
+                            >
+                          </div>
+                        </div>
+
+                        <textarea
+                          autocomplete="off"
+                          type="text"
+                          name="account-description"
+                          placeholder="Описание аккаунта (обязательно)"
+                          class="additionally-product__input"
+                        ></textarea>
+
+                        <textarea
+                          autocomplete="off"
+                          type="text"
+                          name="additionally"
+                          placeholder="Дополнительно (покупатель увидит после покупки)"
+                          class="additionally-product__input"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="add-product__footer footer-product">
+                      <div class="footer-product__inputs footer-inputs">
+                        <div class="footer-inputs__inp">
+                          <div class="info-product__title">
+                            <p>Старая цена (в руб.)</p>
+                          </div>
+
+                          <input
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            data-error="Ошибка"
+                            placeholder=""
+                            class="input"
+                          />
+                        </div>
+
+                        <div class="footer-inputs__inp">
+                          <div class="info-product__title">
+                            <p>Новая цена (в руб.)</p>
+                          </div>
+
+                          <input
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            data-error="Ошибка"
+                            placeholder=""
+                            class="input"
+                          />
+
+                          <span>Необязательно</span>
+                        </div>
+
+                        <div class="footer-inputs__inp">
+                          <div class="info-product__title">
+                            <p>Цена в каталоге</p>
+                          </div>
+
+                          <input
+                            autocomplete="off"
+                            type="text"
+                            name="form[]"
+                            data-error="Ошибка"
+                            placeholder=""
+                            class="input"
+                          />
+
+                          <span>С учетом комиссии</span>
+                        </div>
+                      </div>
+
+                      <div class="footer-product__link">
+                        <a href="#" class="footer-product__btn btn"
+                          ><p>Добавить товар</p></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-product__body">
+                    ТУТ МОЖЕТ БЫТЬ ВСЁ ЧТО УГОДНО))
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

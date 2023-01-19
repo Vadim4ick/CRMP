@@ -1,0 +1,44 @@
+.tabs-play {
+  &__navigation {
+    display: flex;
+    @include adaptiveValue("gap", 20, 10);
+    justify-content: center;
+    flex-wrap: wrap;
+    @media (max-width: $mobileSmall) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__title {
+  }
+
+  &__content {
+    @include adaptiveValue("padding-right", 30, 5);
+    @include adaptiveValue("padding-left", 30, 5);
+    @include adaptiveValue("padding-top", 50, 30);
+    @include adaptiveValue("padding-bottom", 50, 30);
+  }
+
+  &__body {
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(15);
+    align-items: start;
+    row-gap: rem(30);
+    @media (max-width: em(1100)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+}

@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page page__home">
+        <section class="main-play__catalog catalog-play">
+          <div class="catalog-play__phone"></div>
+          <div class="catalog-play__container">
+            <div class="catalog-play__title">
+              <h1>Каталог</h1>
+            </div>
+
+            <div data-tabs class="catalog-play__tabs tabs-play">
+              <nav data-tabs-titles class="tabs-play__navigation">
+                <button
+                  type="button"
+                  class="tabs-play__title tabs-title title-accounts _tab-active"
+                >
+                  Игровые аккаунты
+                </button>
+                <button
+                  type="button"
+                  class="tabs-play__title tabs-title title-currency"
+                >
+                  Виртуальная валюта
+                </button>
+                <button
+                  type="button"
+                  class="tabs-play__title tabs-title title-products"
+                >
+                  Другие товары
+                </button>
+              </nav>
+              <div data-tabs-body class="tabs-play__content">
+                <div class="tabs-play__body">
+                  <div class="catalog__filter filter-catalog">
+                    <div class="filter-catalog__container">
+                      <div class="filter-catalog__body body-catalog_filter">
+                        <div class="body-catalog_filter__body">
+                          <div class="search__mobile"></div>
+                          <div
+                            class="body-catalog_filter__header header-filter"
+                          >
+                            <div
+                              data-da=".search__mobile, 768"
+                              class="header-filter__search search-filter _icon-search"
+                            >
+                              <input
+                                autocomplete="off"
+                                type="text"
+                                name="form[]"
+                                data-error="Ошибка"
+                                placeholder="Поиск..."
+                                class="search-filter__inp"
+                              />
+                            </div>
+                            <div class="header-filter__cost cost-filter">
+                              <div class="cost-filter__title">
+                                <p>Стоимость</p>
+                              </div>
+                              <div class="cost-filter__inputs">
+                                <input
+                                  autocomplete="off"
+                                  type="text"
+                                  name="form[]"
+                                  data-error="Ошибка"
+                                  placeholder="От"
+                                  class="cost-filter__inp inp"
+                                />
+                                <span>-</span>
+                                <input
+                                  autocomplete="off"
+                                  type="text"
+                                  name="form[]"
+                                  data-error="Ошибка"
+                                  placeholder="До"
+                                  class="cost-filter__inp inp"
+                                />
+                              </div>
+                            </div>
+                            <div class="header-filter__selects">
+                              <div
+                                class="header-filter__project project-filter"
+                              >
+                                <div class="project-filter__title">
+                                  <p>Проект</p>
+                                </div>
+
+                                <select
+                                  name="form[]"
+                                  class="project-filter__form"
+                                >
+                                  <option value="1" selected>Radmir RP</option>
+                                  <option value="2">Radmir RP</option>
+                                  <option value="3">Radmir RP</option>
+                                  <option value="4">Radmir RP</option>
+                                </select>
+                              </div>
+                              <div class="header-filter__server server-filter">
+                                <div class="server-filter__title">
+                                  <p>Сервер</p>
+                                </div>
+
+                                <select
+                                  name="form[]"
+                                  class="server-filter__form"
+                                >
+                                  <option value="1" selected>01 Server</option>
+                                  <option value="2">02 Server</option>
+                                  <option value="3">03 Server</option>
+                                  <option value="4">04 Server</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="header-filter__level level-filter">
+                              <div class="level-filter__title">
+                                <p>Уровень</p>
+                              </div>
+
+                              <div class="level-filter__inputs">
+                                <input
+                                  autocomplete="off"
+                                  type="text"
+                                  name="form[]"
+                                  data-error="Ошибка"
+                                  placeholder="От"
+                                  class="level-filter__inp inp"
+                                />
+                                <span>-</span>
+                                <input
+                                  autocomplete="off"
+                                  type="text"
+                                  name="form[]"
+                                  data-error="Ошибка"
+                                  placeholder="До"
+                                  class="level-filter__inp inp"
+                                />
+                              </div>
+                            </div>
+                            <div class="header-filter__money money-filter">
+                              <div class="money-filter__title">
+                                <p>Денег</p>
+                              </div>
+
+                              <div class="money-filter__inputs">
+                                <input
+                                  autocomplete="off"
+                                  type="text"
+                                  name="form[]"
+                                  data-error="Ошибка"
+                                  placeholder="От"
+                                  class="money-filter__inp inp"
+                                />
+                                <span>-</span>
+                                <input
+                                  autocomplete="off"
+                                  type="text"
+                                  name="form[]"
+                                  data-error="Ошибка"
+                                  placeholder="До"
+                                  class="money-filter__inp inp"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="body-catalog_filter__content content-filter"
+                          >
+                            <div class="content-filter__price price-filter">
+                              <div class="price-filter__sorting _active">
+                                <a href="#">Подороже</a>
+                              </div>
+                              <div class="price-filter__sorting">
+                                <a href="#">Подешевле</a>
+                              </div>
+                            </div>
+                            <div
+                              class="content-filter__checkboxes checkboxes-filter"
+                            >
+                              <div class="checkboxes-filter__checkbox">
+                                <input
+                                  id="c_1"
+                                  data-error="Ошибка"
+                                  class="checkbox__input"
+                                  type="checkbox"
+                                  value="1"
+                                  name="form[]"
+                                />
+                                <label for="c_1" class="checkbox__label"
+                                  ><span class="checkbox__text"
+                                    >Текст</span
+                                  ></label
+                                >
+                              </div>
+                              <div class="checkboxes-filter__checkbox">
+                                <input
+                                  id="c_2"
+                                  data-error="Ошибка"
+                                  class="checkbox__input"
+                                  type="checkbox"
+                                  value="2"
+                                  name="form[]"
+                                />
+                                <label for="c_2" class="checkbox__label"
+                                  ><span class="checkbox__text"
+                                    >С рег.данными</span
+                                  ></label
+                                >
+                              </div>
+                              <div class="checkboxes-filter__checkbox">
+                                <input
+                                  id="c_3"
+                                  data-error="Ошибка"
+                                  class="checkbox__input"
+                                  type="checkbox"
+                                  value="3"
+                                  name="form[]"
+                                />
+                                <label for="c_3" class="checkbox__label"
+                                  ><span class="checkbox__text"
+                                    >Без КПЗ</span
+                                  ></label
+                                >
+                              </div>
+                              <div class="checkboxes-filter__checkbox">
+                                <input
+                                  id="c_4"
+                                  data-error="Ошибка"
+                                  class="checkbox__input"
+                                  type="checkbox"
+                                  value="4"
+                                  name="form[]"
+                                />
+                                <label for="c_4" class="checkbox__label"
+                                  ><span class="checkbox__text"
+                                    >С домом</span
+                                  ></label
+                                >
+                              </div>
+                              <div class="checkboxes-filter__checkbox">
+                                <input
+                                  id="c_5"
+                                  data-error="Ошибка"
+                                  class="checkbox__input"
+                                  type="checkbox"
+                                  value="5"
+                                  name="form[]"
+                                />
+                                <label for="c_5" class="checkbox__label"
+                                  ><span class="checkbox__text"
+                                    >С авто</span
+                                  ></label
+                                >
+                              </div>
+                              <div class="checkboxes-filter__checkbox">
+                                <input
+                                  id="c_6"
+                                  data-error="Ошибка"
+                                  class="checkbox__input"
+                                  type="checkbox"
+                                  value="6"
+                                  name="form[]"
+                                />
+                                <label for="c_6" class="checkbox__label"
+                                  ><span class="checkbox__text"
+                                    >Продавец онлайн</span
+                                  ></label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-catalog__link">
+                      <button class="filter-catalog__btn btn _icon-pluse">
+                        <p>Добавить товар</p>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tabs-play__items">
+                    <article class="tabs-play__card card-play">
+                      <div class="card-play__sale">-15%</div>
+
+                      <div class="card-play__heading">
+                        <div class="card-play__image-ibg">
+                          <img src="img/main/catalog-play/1.png" alt="" />
+                        </div>
+                        <div class="card-play__title">
+                          <p>Black Russia</p>
+                          <p>Ufa</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__header card-header">
+                          <div class="card-header__info">
+                            <span>Уровень</span>
+                            <p>35</p>
+                          </div>
+                          <div class="card-header__info">
+                            <span>Наличные</span>
+                            <p>891 134$</p>
+                          </div>
+                          <div class="card-header__info false">
+                            <span>Привязки</span>
+                            <p>Нет</p>
+                          </div>
+                        </div>
+                        <div class="card-play__text">
+                          <p>
+                            Хороший скин, Организация: Автошкола, все лицензии,
+                            3 скилла, есть дом и бмв, без привязок, с рег
+                            данными
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                            <div class="price-card__old">
+                              <s>600₽</s>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+                          <div class="card-play__circle _active">
+                            Arefyew <span>(1340)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="tabs-play__card card-play">
+                      <div class="card-play__heading">
+                        <div class="card-play__image-ibg">
+                          <img src="img/main/catalog-play/2.png" alt="" />
+                        </div>
+                        <div class="card-play__title">
+                          <p>Radmir RP</p>
+                          <p>01</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__header card-header">
+                          <div class="card-header__info">
+                            <span>Уровень</span>
+                            <p>35</p>
+                          </div>
+                          <div class="card-header__info">
+                            <span>Наличные</span>
+                            <p>891 134$</p>
+                          </div>
+                          <div class="card-header__info true">
+                            <span>Привязки</span>
+                            <p>Да</p>
+                          </div>
+                        </div>
+                        <div class="card-play__text">
+                          <p>
+                            Хороший скин, Организация: Автошкола, все лицензии,
+                            3 скилла, есть дом и бмв, без привязок, с рег
+                            данными
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+                          <div class="card-play__circle">
+                            Arefyew <span>(1340)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="tabs-play__card card-play">
+                      <div class="card-play__sale">-15%</div>
+                      <div class="card-play__heading">
+                        <div class="card-play__image-ibg">
+                          <img src="img/main/catalog-play/3.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="card-play__title">
+                        <p>GTA RP</p>
+                        <p>02</p>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__header card-header">
+                          <div class="card-header__info">
+                            <span>Уровень</span>
+                            <p>35</p>
+                          </div>
+                          <div class="card-header__info">
+                            <span>Наличные</span>
+                            <p>891 134$</p>
+                          </div>
+                          <div class="card-header__info false">
+                            <span>Привязки</span>
+                            <p>Нет</p>
+                          </div>
+                        </div>
+                        <div class="card-play__text">
+                          <p>
+                            Хороший скин, Организация: Автошкола, все лицензии,
+                            3 скилла, есть дом и бмв, без привязок, с рег
+                            данными
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                            <div class="price-card__old">
+                              <s>600₽</s>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+                          <div class="card-play__circle _active">
+                            Arefyew <span>(1340)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="tabs-play__card card-play">
+                      <div class="card-play__sale">-15%</div>
+
+                      <div class="card-play__heading">
+                        <div class="card-play__image-ibg">
+                          <img src="img/main/catalog-play/1.png" alt="" />
+                        </div>
+                        <div class="card-play__title">
+                          <p>Black Russia</p>
+                          <p>Ufa</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__header card-header">
+                          <div class="card-header__info">
+                            <span>Уровень</span>
+                            <p>35</p>
+                          </div>
+                          <div class="card-header__info">
+                            <span>Наличные</span>
+                            <p>891 134$</p>
+                          </div>
+                          <div class="card-header__info false">
+                            <span>Привязки</span>
+                            <p>Нет</p>
+                          </div>
+                        </div>
+                        <div class="card-play__text">
+                          <p>
+                            Хороший скин, Организация: Автошкола, все лицензии,
+                            3 скилла, есть дом и бмв, без привязок, с рег
+                            данными
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                            <div class="price-card__old">
+                              <s>600₽</s>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+                          <div class="card-play__circle _active">
+                            Arefyew <span>(1340)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="tabs-play__card card-play">
+                      <div class="card-play__heading">
+                        <div class="card-play__image-ibg">
+                          <img src="img/main/catalog-play/2.png" alt="" />
+                        </div>
+                        <div class="card-play__title">
+                          <p>Radmir RP</p>
+                          <p>01</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__header card-header">
+                          <div class="card-header__info">
+                            <span>Уровень</span>
+                            <p>35</p>
+                          </div>
+                          <div class="card-header__info">
+                            <span>Наличные</span>
+                            <p>891 134$</p>
+                          </div>
+                          <div class="card-header__info true">
+                            <span>Привязки</span>
+                            <p>Да</p>
+                          </div>
+                        </div>
+                        <div class="card-play__text">
+                          <p>
+                            Хороший скин, Организация: Автошкола, все лицензии,
+                            3 скилла, есть дом и бмв, без привязок, с рег
+                            данными
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+                          <div class="card-play__circle">
+                            Arefyew <span>(1340)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="tabs-play__card card-play">
+                      <div class="card-play__sale">-15%</div>
+                      <div class="card-play__heading">
+                        <div class="card-play__image-ibg">
+                          <img src="img/main/catalog-play/3.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="card-play__title">
+                        <p>GTA RP</p>
+                        <p>02</p>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__header card-header">
+                          <div class="card-header__info">
+                            <span>Уровень</span>
+                            <p>35</p>
+                          </div>
+                          <div class="card-header__info">
+                            <span>Наличные</span>
+                            <p>891 134$</p>
+                          </div>
+                          <div class="card-header__info false">
+                            <span>Привязки</span>
+                            <p>Нет</p>
+                          </div>
+                        </div>
+                        <div class="card-play__text">
+                          <p>
+                            Хороший скин, Организация: Автошкола, все лицензии,
+                            3 скилла, есть дом и бмв, без привязок, с рег
+                            данными
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                            <div class="price-card__old">
+                              <s>600₽</s>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+                          <div class="card-play__circle _active">
+                            Arefyew <span>(1340)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="catalog__pagging pagging">
+                    <button
+                      class="pagging__arrow pagging__arrow_left _icon-arrow-right disabled"
+                    ></button>
+                    <ul class="pagging__list">
+                      <li class="pagging__item _active">
+                        <a href="#"></a>
+                      </li>
+                      <li class="pagging__item">
+                        <a href="#"></a>
+                      </li>
+                      <li class="pagging__item">
+                        <a href="#"></a>
+                      </li>
+                    </ul>
+                    <button
+                      class="pagging__arrow pagging__arrow_right _icon-arrow-right"
+                    ></button>
+                  </div>
+                  <div class="products__missing mising-products">
+                    <div class="mising-products__title">
+                      <p>Товары отсутствуют</p>
+                    </div>
+
+                    <div class="mising-products__link">
+                      <button class="filter-catalog__btn btn _icon-pluse">
+                        <p>Добавить товар</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-play__body">
+                  <div class="catalog__filter filter-catalog">
+                    <div class="filter-catalog__container">
+                      <div class="filter-catalog__body body-catalog_filter">
+                        <div class="body-catalog_filter__body">
+                          <div
+                            class="body-catalog_filter__header header-filter"
+                          >
+                            <div class="header-filter__selects">
+                              <div
+                                class="header-filter__project project-filter"
+                              >
+                                <div class="project-filter__title">
+                                  <p>Проект</p>
+                                </div>
+
+                                <select
+                                  name="form[]"
+                                  class="project-filter__form"
+                                >
+                                  <option value="1" selected>Radmir RP</option>
+                                  <option value="2">Radmir RP</option>
+                                  <option value="3">Radmir RP</option>
+                                  <option value="4">Radmir RP</option>
+                                </select>
+                              </div>
+                              <div class="header-filter__server server-filter">
+                                <div class="server-filter__title">
+                                  <p>Сервер</p>
+                                </div>
+
+                                <select
+                                  name="form[]"
+                                  class="server-filter__form"
+                                >
+                                  <option value="1" selected>01 Server</option>
+                                  <option value="2">02 Server</option>
+                                  <option value="3">03 Server</option>
+                                  <option value="4">04 Server</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div
+                              class="header-filter__availability availability-filter"
+                            >
+                              <div class="availability-filter__title">
+                                <p>Наличие</p>
+                              </div>
+
+                              <div class="availability-filter__inputs">
+                                <input
+                                  autocomplete="off"
+                                  type="text"
+                                  name="form[]"
+                                  data-error="Ошибка"
+                                  placeholder="От"
+                                  class="availability-filter__inp inp"
+                                />
+                                <span>-</span>
+                                <input
+                                  autocomplete="off"
+                                  type="text"
+                                  name="form[]"
+                                  data-error="Ошибка"
+                                  placeholder="До"
+                                  class="availability-filter__inp inp"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="body-catalog_filter__content content-filter"
+                          >
+                            <div class="content-filter__price price-filter">
+                              <div class="price-filter__sorting _active">
+                                <a href="#">Подороже</a>
+                              </div>
+                              <div class="price-filter__sorting">
+                                <a href="#">Подешевле</a>
+                              </div>
+                            </div>
+                            <div
+                              class="content-filter__checkboxes checkboxes-filter"
+                            >
+                              <div class="checkboxes-filter__checkbox">
+                                <input
+                                  id="c_7"
+                                  data-error="Ошибка"
+                                  class="checkbox__input"
+                                  type="checkbox"
+                                  value="7"
+                                  name="form[]"
+                                />
+                                <label for="c_7" class="checkbox__label"
+                                  ><span class="checkbox__text"
+                                    >Продавец онлайн</span
+                                  ></label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-catalog__link">
+                      <button class="filter-catalog__btn btn _icon-pluse">
+                        <p>Добавить товар</p>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tabs-play__items">
+                    <article class="tabs-play__card card-play">
+                      <div class="card-play__sale">-15%</div>
+
+                      <div class="card-play__heading">
+                        <div class="card-play__image-ibg">
+                          <img src="img/main/catalog-play/2.png" alt="" />
+                        </div>
+                        <div class="card-play__title">
+                          <p>Black Russia</p>
+                          <p>Ufa</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__header card-header">
+                          <div class="card-header__info">
+                            <span>В наличии</span>
+                            <p>107.030.000$</p>
+                          </div>
+                        </div>
+                        <div class="card-play__text">
+                          <p>
+                            В наличие много виртов, чекай в профиле Стань
+                            богатым, без банов
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                            <div class="price-card__item">
+                              <span>/ 1 млн</span>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+                          <div class="card-play__circle _active">
+                            Arefyew <span>(1340)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="tabs-play__card card-play">
+                      <div class="card-play__sale">-15%</div>
+                      <div class="card-play__heading">
+                        <div class="card-play__image-ibg">
+                          <img src="img/main/catalog-play/2.png" alt="" />
+                        </div>
+                        <div class="card-play__title">
+                          <p>GTA RP</p>
+                          <p>02</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__header card-header">
+                          <div class="card-header__info">
+                            <span>В наличии</span>
+                            <p>107.030.000$</p>
+                          </div>
+                        </div>
+
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                            <div class="price-card__item">
+                              <span>/ 1 млн</span>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+                          <div class="card-play__circle _active">
+                            Arefyew <span>(1340)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="tabs-play__card card-play">
+                      <div class="card-play__heading">
+                        <div class="card-play__image-ibg">
+                          <img src="img/main/catalog-play/2.png" alt="" />
+                        </div>
+                        <div class="card-play__title">
+                          <p>Radmir RP</p>
+                          <p>01</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__header card-header">
+                          <div class="card-header__info">
+                            <span>В наличии</span>
+                            <p>107.030.000$</p>
+                          </div>
+                        </div>
+                        <div class="card-play__text">
+                          <p>
+                            В наличие много виртов, чекай в профиле Стань
+                            богатым, без банов
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                            <div class="price-card__item">
+                              <span>/ 1 млн</span>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+                          <div class="card-play__circle">
+                            Arefyew <span>(1340)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="catalog__pagging pagging">
+                    <button
+                      class="pagging__arrow pagging__arrow_left _icon-arrow-right disabled"
+                    ></button>
+                    <ul class="pagging__list">
+                      <li class="pagging__item _active">
+                        <a href="#"></a>
+                      </li>
+                      <li class="pagging__item">
+                        <a href="#"></a>
+                      </li>
+                      <li class="pagging__item">
+                        <a href="#"></a>
+                      </li>
+                    </ul>
+                    <button
+                      class="pagging__arrow pagging__arrow_right _icon-arrow-right"
+                    ></button>
+                  </div>
+                  <div class="products__missing mising-products">
+                    <div class="mising-products__title">
+                      <p>Товары отсутствуют</p>
+                    </div>
+
+                    <div class="mising-products__link">
+                      <button class="filter-catalog__btn btn _icon-pluse">
+                        <p>Добавить товар</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-play__body">
+                  <div class="tabs-play__items">
+                    <article class="tabs-play__card card-play other-products">
+                      <div class="card-play__sale">-15%</div>
+
+                      <div class="card-play__heading">
+                        <div class="card-play__title">
+                          <p>Статус</p>
+                          <p>продавца</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__text">
+                          <p>
+                            Стань официальном продавцом на нашем сайте и
+                            зарабатывай на этом!
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                            <div class="price-card__item">
+                              <span>/ мес</span>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+
+                          <img src="img/main/cart-footer.svg" alt="" />
+                        </div>
+                      </div>
+                    </article>
+                    <article class="tabs-play__card card-play other-products">
+                      <div class="card-play__heading">
+                        <div class="card-play__title">
+                          <p>VIP Elite</p>
+                          <p>статус</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__text">
+                          <p>
+                            Стань официальном продавцом на нашем сайте и
+                            зарабатывай на этом!
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>100 ₽</span>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+
+                          <img src="img/main/cart-footer.svg" alt="" />
+                        </div>
+                      </div>
+                    </article>
+                    <article class="tabs-play__card card-play other-products">
+                      <div class="card-play__sale">-15%</div>
+
+                      <div class="card-play__heading">
+                        <div class="card-play__title">
+                          <p>VIP Classic</p>
+                          <p>продавца</p>
+                        </div>
+                      </div>
+                      <div class="card-play__body">
+                        <div class="card-play__text">
+                          <p>
+                            Стань официальном продавцом на нашем сайте и
+                            зарабатывай на этом!
+                          </p>
+                        </div>
+                        <div class="card-play__footer">
+                          <div class="card-play__price price-card">
+                            <div class="price-card__current">
+                              <span>282 ₽</span>
+                            </div>
+                            <div class="price-card__item">
+                              <span>/ 6 мес</span>
+                            </div>
+                          </div>
+                          <a href="#" class="card-play__btn btn" href=""
+                            ><p>Подробнее</p></a
+                          >
+
+                          <img src="img/main/cart-footer.svg" alt="" />
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="catalog__pagging pagging">
+                    <button
+                      class="pagging__arrow pagging__arrow_left _icon-arrow-right disabled"
+                    ></button>
+                    <ul class="pagging__list">
+                      <li class="pagging__item _active">
+                        <a href="#"></a>
+                      </li>
+                      <li class="pagging__item">
+                        <a href="#"></a>
+                      </li>
+                      <li class="pagging__item">
+                        <a href="#"></a>
+                      </li>
+                    </ul>
+                    <button
+                      class="pagging__arrow pagging__arrow_right _icon-arrow-right"
+                    ></button>
+                  </div>
+                  <div class="products__missing mising-products">
+                    <div class="mising-products__title">
+                      <p>Товары отсутствуют</p>
+                    </div>
+
+                    <div class="mising-products__link">
+                      <button class="filter-catalog__btn btn _icon-pluse">
+                        <p>Добавить товар</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

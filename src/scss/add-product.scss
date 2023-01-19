@@ -1,0 +1,264 @@
+.product {
+  &__add {
+  }
+}
+
+.add-product {
+  &__container {
+    max-width: rem(770);
+  }
+
+  &__contents {
+    @include adaptiveValue("padding-top", 80, 50);
+  }
+
+  &__content {
+    @include adaptiveValue("margin-bottom", 100, 70);
+  }
+
+  &__title {
+    text-align: center;
+    h1 {
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    color: #949fb7;
+    h3 {
+      @include adaptiveValue("font-size", 25, 20);
+    }
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    padding-top: rem(30);
+    @include adaptiveValue("gap", 15, 7);
+    padding-bottom: rem(60);
+    p {
+      font-weight: 600;
+      line-height: math.div(18, 15);
+      text-decoration-line: underline;
+      color: #949fb7;
+    }
+    &::before {
+      align-self: center;
+      color: #949fb7;
+      font-size: rem(14);
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.add-product {
+  &__content {
+    background: #fbfbff;
+    border-radius: 25px;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: rem(30);
+    flex-wrap: wrap;
+    gap: rem(10);
+    padding-top: rem(40);
+    border-bottom: 1px solid #d6ddea;
+  }
+
+  &__title {
+  }
+
+  &__body {
+  }
+
+  &__info {
+    padding: rem(30) rem(40) rem(40) rem(40);
+    border-bottom: 1px solid #d6ddea;
+    @media (max-width: em(650)) {
+      padding: rem(30);
+    }
+  }
+
+  &__additionally {
+    padding: rem(30) rem(80) rem(40) rem(80);
+    border-bottom: 1px solid #d6ddea;
+
+    @media (max-width: em(650)) {
+      padding: rem(30);
+    }
+  }
+
+  &__footer {
+  }
+
+  &__tabs {
+  }
+}
+
+.info-product {
+  &__container {
+    max-width: rem(510);
+  }
+
+  &__body {
+    display: grid;
+    @include adaptiveValue("column-gap", 30, 10);
+    grid-template-columns: 1fr 1fr;
+    @include adaptiveValue("row-gap", 30, 20);
+  }
+
+  &__select {
+    @media (max-width: em(650)) {
+      grid-column: span 2;
+    }
+  }
+
+  &__title {
+    p {
+      font-weight: 400;
+      font-size: rem(20);
+      line-height: math.div(24, 20);
+      color: #949fb7;
+      padding-bottom: rem(5);
+    }
+    span {
+      font-size: rem(12);
+      line-height: math.div(14, 12);
+    }
+  }
+
+  &__form {
+  }
+
+  &__item {
+    input {
+      padding: rem(15) rem(30);
+    }
+
+    @media (max-width: em(650)) {
+      grid-column: span 2;
+    }
+  }
+
+  &__inp {
+    width: 100%;
+    background: #f3f5f9;
+    border-radius: 300px;
+    min-height: rem(50);
+  }
+}
+
+.additionally-product {
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include adaptiveValue("row-gap", 40, 25);
+  }
+
+  &__descriptions {
+  }
+
+  &__title {
+    p {
+      font-weight: 600;
+      font-size: rem(25);
+      line-height: math.div(30, 25);
+      color: #949fb7;
+    }
+  }
+
+  &__checkboxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include adaptiveValue("column-gap", 30, 15);
+    @include adaptiveValue("row-gap", 20, 10);
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    gap: rem(5);
+  }
+
+  &__input {
+  }
+}
+
+.footer-product {
+  padding: rem(30) 0;
+  &__inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: rem(30);
+  }
+
+  &__link {
+    display: table;
+    margin: rem(50) auto 0 auto;
+  }
+
+  &__btn {
+    padding: rem(15) rem(30);
+    background: #aeb9cf;
+    border-radius: 300px;
+    justify-content: flex-end;
+    padding-left: 0;
+    @media (max-width: em(650)) {
+      min-width: rem(200);
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.footer-inputs {
+  &__inp {
+    position: relative;
+    &:last-child {
+      grid-column: span 2;
+    }
+
+    @media (max-width: em(650)) {
+      grid-column: span 2;
+    }
+
+    input {
+      min-width: rem(225);
+      min-height: rem(50);
+      background: #f3f5f9;
+      border-radius: 300px;
+      padding: rem(15) rem(30);
+
+      &:focus {
+        background: #c5cfe4;
+      }
+    }
+
+    span {
+      position: absolute;
+      bottom: rem(-20);
+      right: 0;
+      font-size: rem(12);
+      line-height: math.div(15, 12);
+      color: #949fb7;
+    }
+  }
+}
+
+textarea {
+  background: #f3f5f9;
+  border-radius: 300px;
+  resize: none;
+  outline: none;
+  width: 100%;
+  min-height: rem(90);
+  padding: rem(15) rem(30);
+}
